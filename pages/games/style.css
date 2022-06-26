@@ -24,13 +24,13 @@ p {
 .list-cards {
     display: flex;
     flex-wrap: wrap;
-    max-width: 900px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
 .card {
     background: #FFFFFF;
-    flex: 1 1 200px;
+    flex: 1 1 400px;
     margin: 1rem;
     height: 450px;
     border-radius: .1rem;
