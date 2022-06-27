@@ -61,4 +61,12 @@ main{
     
 }
 
+@media screen and (max-width:640px) {
+    
+    .image img{
+        display: none;
+    }
+    
+}
+
 
