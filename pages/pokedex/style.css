@@ -73,6 +73,7 @@ form > button:hover{
 .pokeImage > img{
     max-width: 50%;
     mix-blend-mode: multiply;
+    z-index: 0;
 }
 
 .pokeImage{
@@ -92,4 +93,38 @@ form > button:hover{
 
 .habilidades > p {
     font-size: var(--font-size--2);
+}
+
+@media screen and (max-width:840px) {
+    form{
+        width: 70%;
+    }
+
+    .pokeImage > img{
+        max-width: 55%;
+    }
+}
+
+
+@media screen and (max-width:620px) {
+    main{
+        height: auto;
+    }
+    form{
+        width: 100%;
+    }
+    .resultContainer{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .pokeInfo{
+        display: flex;
+        flex-direction: column;
+        gap: .4rem;
+    }
+
+    .pokeImage > img{
+        max-width: 27%;
+    }
 }

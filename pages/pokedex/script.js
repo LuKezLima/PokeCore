@@ -4,8 +4,12 @@ const getPokemon = async (name) => {
     .then((response) => response.json())
     .then((data) => {
         pokemonData = data;
+    }).catch((error) => {
+        alert('Não encontrado')
     })
 
+
+    const skills = pokemonData.moves.slice(0, 80)
 
     const layout = `
 <div class="resultContainer" id='resultId'>
@@ -23,7 +27,7 @@ const getPokemon = async (name) => {
     </div>
     <hr>
     <div class="habilidades">
-        <p><strong>Habilidades:</strong> ${pokemonData.moves.map(
+        <p><strong>Habilidades:</strong> ${skills.map(
             (skill) => skill.move.name
           )} </h2> </p>
     </div>
@@ -44,7 +48,13 @@ btnSearch.addEventListener('click', (e) => {
     if(document.getElementById('resultId')){
         document.getElementById('main').removeChild(document.getElementById('main').lastElementChild)
     }
-    getPokemon(input.value)
+
+    if(input.value === ''){
+        alert('Campo vazio!')
+    } else{
+        getPokemon(input.value)
+    }
+   
 })
 
 
