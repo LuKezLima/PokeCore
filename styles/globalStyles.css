@@ -134,6 +134,7 @@ li a {
         display: none;
         place-items: center;
         opacity: .95;
+        z-index: 999;
         
     }
 
