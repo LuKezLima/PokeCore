@@ -78,11 +78,13 @@ p {
     background: linear-gradient(to right, rgb(197, 8, 8), rgb(219, 14, 14));
     text-decoration: none;
     padding: 10px 5px;
+    transition: all ease .5s;
 }
 
 .btn:hover {
     cursor: pointer;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    filter: brightness(.9);
 }
 
 @media screen and (max-width: 747px) {
