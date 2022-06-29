@@ -89,11 +89,13 @@ li a {
 
 #menuHamburguer {
   cursor: pointer;
-  display: none;
-  width: 30px;
+  
+  width: 100px;
   height: 30px;
   background-image: url(/assets/menuHamburguer.png);
+  z-index: 99999;
   background-size: cover;
+  display: none;
 }
 
 @keyframes pokeball {
@@ -105,12 +107,19 @@ li a {
   }
 }
 
+@media screen and(min-width: 769px) {
+  nav{
+    background-color: #2a75bb;
+  }
+}
+
 @media screen and (max-width: 768px) {
   #menuHamburguer {
     display: block;
-    z-index: 9999;
+    z-index: 1000;
   }
 
+ 
   nav {
     position: fixed;
     background-color: var(--primary-color);

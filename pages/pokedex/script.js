@@ -1,6 +1,6 @@
 const getPokemon = async (name) => {
     let pokemonData = '';
-    await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`)
+    await fetch(`https://pokeapi.co/api/v2/pokemon/${name.toLowerCase()}`)
     .then((response) => response.json())
     .then((data) => {
         pokemonData = data;
