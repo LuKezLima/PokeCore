@@ -22,6 +22,8 @@ main{
     text-shadow: 2px 2px 2px var(--secondary-color);
 }
 
+
+
 .content a{
     background-color:var(--secondary-color);
     align-self: flex-start;
