@@ -96,7 +96,7 @@ li a {
 }
 
 #menuHamburguer {
-  max-width: 180%;
+  width: 35px;
 }
 
 @keyframes pokeball {
@@ -119,6 +119,19 @@ li a {
     display: block;
     z-index: 1000;
   }
+
+  
+  #pokeCore {
+    max-width: 34%;
+   
+  }
+  
+  #pokeball {
+    max-width:7%;
+    
+  }
+  
+ 
 
  
   nav {
