@@ -3,12 +3,14 @@
         const menu = document.getElementById('menu')
 
         menuHamburguer.addEventListener('click', () => {
+            alert('chegou')
             if(menu.style.display == 'grid'){
                 menu.style.display = 'none'
-                menuHamburguer.style.backgroundImage = 'url(./assets/menuHamburguer.png)'
+                menuHamburguer.src = './assets/menuHamburguer.png'
             } else{
                 menu.style.display = 'grid'
-                menuHamburguer.style.backgroundImage = 'url(./assets/closeIcon.png)'
+                menuHamburguer.src = './assets/closeIcon.png'
+                menuHamburguer.style.width = '50px'
             }
 
 

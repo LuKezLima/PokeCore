@@ -87,15 +87,16 @@ li a {
   font-weight: bold;
 }
 
-#menuHamburguer {
+#wrapperMenu {
   cursor: pointer;
-  
-  width: 100px;
-  height: 30px;
-  background-image: url(/assets/menuHamburguer.png);
+
   z-index: 99999;
   background-size: cover;
   display: none;
+}
+
+#menuHamburguer {
+  max-width: 180%;
 }
 
 @keyframes pokeball {
@@ -114,10 +115,9 @@ li a {
 }
 
 @media screen and (max-width: 768px) {
-  #menuHamburguer {
+  #wrapperMenu {
     display: block;
     z-index: 1000;
-    background-image: url(./assets/menuHamburguer.png);
   }
 
  
