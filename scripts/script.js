@@ -20,6 +20,6 @@
             var emailInput = document.getElementById("form-email").value;
             var aparicao = emailInput.substring(emailInput.indexOf("@") + 1, emailInput.length)
             if(aparicao != "pokemons.com.br") {
-                alert("O domínio precisa ser pokemons.com.br");
+                alert("O domínio precisa ser pokecore.com.br");
             }
         }
