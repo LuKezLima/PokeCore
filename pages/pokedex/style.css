@@ -1,5 +1,5 @@
 main{
-    margin-top: .4rem;
+    margin: 0.4rem 0;
     height: 100%;
     background: linear-gradient(to right, #f2994a, #f2c94c);
     padding: 1rem;
@@ -9,11 +9,14 @@ main{
     gap: 1rem;
 }
 
-main > h2{
-    font-size: var(--font-size-3);
-    color: var(--secondary-color);
-    text-shadow: 1px 3px 2px #d9d9d9;
-}
+main h2 {
+    margin: 2rem auto;
+    justify-content: center;
+    text-align: center;
+    font-size: var(--font-size-2);
+    color: #fff;
+    text-shadow: 2px 2px 2px var(--secondary-color);
+  }
 
 form{
     display: flex;
@@ -22,7 +25,6 @@ form{
     padding: 1rem;
     border-radius: .25rem;
     width: 45%;
-    
     background-color: #fdfdfdc7;
 }
 
@@ -33,13 +35,11 @@ form{
     background: transparent;
     border-bottom: 1px solid var(--secondary-color);
     outline: none;
-    color: rgb(9, 34, 114);
-    
+    color: var(--secondary-color); 
 }
 
-
 #input::placeholder{
-    color: rgb(9, 34, 114);
+    color: var(--secondary-color);
     font-weight: 400;
 }
 
@@ -67,8 +67,8 @@ form > button:hover{
     padding: 1rem;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    color: var(--secondary-color);
 }
-
 
 .pokeImage > img{
     max-width: 50%;

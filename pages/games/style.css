@@ -1,23 +1,23 @@
 main {
-    margin-top: .4rem;
+    margin: 0.4rem 0;
     height: auto;
     background: linear-gradient(to right, #f2994a, #f2c94c);
     padding: 1rem;
     place-items: center;
 }
 
-img {
+.card > img {
     max-width: 100%;
     display: block;
 }
 
-p {
+.card > p {
     display: flex;
     text-align: center;
 }
 
 main h2 {
-    margin-top: 2rem;
+    margin: 2rem auto;
     justify-content: center;
     text-align: center;
     font-size: var(--font-size-2);
@@ -101,7 +101,7 @@ main h2 {
         font-size: var(--font-size--1);
     }
     .card-text {
-        font-size: var(--font-size--2);
+        font-size: var(--font-size--1);
     }
 }
 
@@ -125,11 +125,15 @@ main h2 {
 }
 
 @media screen and (max-width: 515px) {
+    .card {
+        min-width: 17rem;
+    }
+
     .card-name {
         font-size: var(--font-size--1);
     }
     .card-text {
-        font-size: var(--font-size--2);
+        font-size: var(--font-size--1);
     }
     .btn {
         display: block;
