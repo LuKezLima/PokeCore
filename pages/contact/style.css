@@ -99,6 +99,9 @@ h2:after {
 }
 
 @media screen and (max-width: 880px) {
+    .container {
+        height: auto;
+    }
     .form-contact {
         grid-template-columns: 1fr;
     }
